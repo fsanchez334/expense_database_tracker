@@ -56,4 +56,24 @@ VALUES
 -- For verification, we can SELECT * on the table
 SELECT * FROM expenses;
 
-    
+/* Some sample table may look like the following
+# transaction_id	amount	date_of_transaction	merchant	card_id	category
+1	674.120	2025-08-06	Chase	1	Needs
+2	300.000	2025-08-06	Rent	1	Needs
+3	300.000	2025-08-06	Withdrawal	1	Wants
+4	210.650	2025-08-07	Insurance	1	Needs
+5	60.000	2025-08-07	Withdrawal	1	Wants
+6	500.000	2025-08-08	Credit Card Payment	1	Needs
+7	600.000	2025-08-08	Credit Card Payment	1	Needs
+8	145.210	2025-08-08	Credit Card Payment	1	Needs
+9	250.000	2025-08-08	Retirement Account	1	Savings
+10	1.000	2025-08-06	Test Transaction	1	Needs
+11	100.000	2025-08-11	HYSA	1	Savings
+12	27.210	2025-08-11	Apple Subscription	1	Wants
+13	49.190	2025-08-11	Food	1	Wants
+14	14.460	2025-08-11	Food	1	Wants
+15	100.000	2025-08-11	HYSA	1	Savings
+16	21.780	2025-08-12	Medical	1	Needs
+17	21.780	2025-08-11	Subscription	1	Wants
+*/
+
