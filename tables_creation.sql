@@ -32,3 +32,28 @@ CREATE TABLE `expenses` (
   KEY `card_id` (`card_id`),
   CONSTRAINT `expenses_ibfk_1` FOREIGN KEY (`card_id`) REFERENCES `card_basic` (`card_id`)
 );
+
+--- Let's populate the expenses table
+INSERT INTO expenses (amount, date_of_transaction, merchant, card_id, category)
+VALUES 
+	(300, '2025-08-06', 'Rent', 1, 'Needs'),
+    (300, '2025-08-06', 'Withdrawal', 1, 'Wants'),
+    (210.65, '2025-08-07', 'Insurance', 1, 'Needs'),
+    (60, '2025-08-07', 'Withdrawal', 1, 'Wants'),
+    (500, '2025-08-08', 'Credit Card Payment', 1, 'Needs'),
+    (600, '2025-08-08', 'Credit Card Payment', 1, 'Needs'),
+    (145.21, '2025-08-08', 'Credit Card Payment', 1, 'Needs'),
+    (250, '2025-08-08', 'Retirement Account', 1, 'Savings'),
+    (1, '2025-08-06', 'Test Transaction', 1, 'Needs'),
+    (100, '2025-08-11', 'HYSA', 1, 'Savings'),
+    (27.21, '2025-08-11', 'Apple Subscription', 1, 'Wants'),
+    (49.19, '2025-08-11', 'Food', 1, 'Wants'),
+    (14.46, '2025-08-11', 'Food', 1, 'Wants'),
+    (100, '2025-08-11', 'HYSA', 1, 'Savings'),
+    (21.78, '2025-08-12', 'Medical', 1, 'Needs'),
+    (21.78, '2025-08-11', 'Subscription', 1, 'Wants');
+
+-- For verification, we can SELECT * on the table
+SELECT * FROM expenses;
+
+    
